@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgba(117, 250, 76, 1);
+  font-family: "Ubuntu Mono", monospace;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 70px;
+}
+
+.navbar {
+  display: none;
+  width: 100%;
+  margin-top: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar > a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgba(117, 250, 76, 1);
+  font-size: 20px;
+}
+
+.navbar > a:hover {
+  color: white;
+}
+
+/* Animator Classes */
+
+.blinking {
+  animation: blinking 2s linear infinite;
+}
+
+.selected {
+  animation: selected 2s linear;
+}
+
+/* Star Stuff */
+.star1 {
+  width: 15px;
+  height: 15px;
+  background: white;
+  animation: animStar 20s linear infinite;
+  position: absolute;
+  z-index: -10;
+  bottom: -50px;
+}
+
+.star2 {
+  width: 10px;
+  height: 10px;
+  background: white;
+  animation: animStar 75s linear infinite;
+  position: absolute;
+  z-index: -20;
+  bottom: -50px;
+}
+
+.star3 {
+  width: 5px;
+  height: 5px;
+  background: white;
+  animation: animStar 150s linear infinite;
+  position: absolute;
+  z-index: -30;
+  bottom: -50px;
+}
+
+/* Keyframes */
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-1500px);
+  }
+}
+
+@keyframes blinking {
+  from {
+    color: rgba(117, 250, 76, 1);
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  to {
+    color: rgba(117, 250, 76, 1);
+  }
+}
+
+@keyframes selected {
+  from {
+    color: white;
+  }
+
+  to {
+    color: rgba(117, 250, 76, 1);
+  }
+}
