@@ -1,4 +1,3 @@
-const sky = document.getElementById("stars-container");
 let stars = document.getElementsByClassName("star");
 
 for (starIndex in stars) {
