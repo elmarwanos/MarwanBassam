@@ -1,9 +1,10 @@
 function selectTitle() {
-    $("title")[0].className = "title selected";
-    $("navbar")[0].style.display = "block";
+    $(".title").addClass("selected").removeClass("blinking");
+    $(".navbar").css("display", "block");
 }
 
 function renewStar(e) {
+    //called by addStar when animation ends
     $("#stars-container").append(e);
 }
 
