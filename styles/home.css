@@ -66,27 +66,27 @@ html {
     width: 15px;
     height: 15px;
     background: white;
-    animation: animStar 20s linear;
+    animation: animStar 60s linear;
     position: absolute;
     z-index: -10;
     bottom: -50px;
 }
 
 .star2 {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background: white;
-    animation: animStar 100s linear;
+    animation: animStar 200s linear;
     position: absolute;
     z-index: -20;
     bottom: -50px;
 }
 
 .star3 {
-    width: 3px;
-    height: 3px;
+    width: 2px;
+    height: 2px;
     background: white;
-    animation: animStar 300s linear;
+    animation: animStar 500s linear;
     position: absolute;
     z-index: -30;
     bottom: -50px;
