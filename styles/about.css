@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portrait-wrapper {
+    height: auto;
+    max-width: 500px;
+    background-color: #235f61;
+    position: relative;
+}
+#portrait {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border: rgb(35, 95, 97) 20px solid;
+}
+
+#back-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#bookmark {
+    display: flex;
+    color: white;
+    z-index: -1;
+    position: absolute;
+    margin-right: -510px;
+    background-color: rgb(37, 105, 23);
+}
+#bookmark > p {
+    padding: 10px;
+}
+#bookmark > span {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #10151e;
+}
+
+#back-content {
+    display: none;
+}
