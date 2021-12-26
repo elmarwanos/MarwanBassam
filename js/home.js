@@ -1,6 +1,8 @@
 function selectTitle() {
     $(".title").addClass("selected").removeClass("blinking");
+    $(".title:hover").css("cursor","text")
     $(".navbar").css("display", "block");
+    
 }
 
 function renewStar(e) {
