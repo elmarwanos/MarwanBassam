@@ -8,107 +8,54 @@
     font-family: "Ubuntu Mono", monospace;
 }
 
-html {
+body {
     height: 100vh;
     width: 100vw;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
 }
 
-.content {
+#title {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 50px;
-    height: 200px;
-    width: 100%;
-    z-index: 0;
-}
-
-.title {
-    text-align: center;
-    font-size: 70px;
     z-index: 0;
     width: fit-content;
-    margin: 0 auto;
+    font-size: clamp(60px, 10vw, 100px);
+
+    font-weight: 400;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
-.title:hover {
+.blinking:hover {
     cursor: pointer;
 }
 
-.navbar {
-    display: none;
-    width: 100%;
-    margin-top: 25px;
-    text-align: center;
-    z-index: 0;
-    animation: fade-down 1s linear;
-}
-
-.navbar > a {
-    animation: fade-down 3s ease-in;
-    margin: 0 10px;
-    text-decoration: none;
-    color: rgba(117, 250, 76, 1);
-    font-size: 20px;
-}
-
-.navbar > a:hover {
-    color: white;
+#hyperjump {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 /* Animator Classes */
-
 .blinking {
     animation: blinking 2s linear infinite;
+    -webkit-animation: blinking 2s linear infinite;
 }
 
-.selected {
-    animation: selected 2s linear;
-}
-
-/* Star Stuff */
-.star1 {
-    width: 15px;
-    height: 15px;
-    background: white;
-    animation: animStar 60s linear;
-    position: absolute;
-    z-index: -10;
-    bottom: -50px;
-}
-
-.star2 {
-    width: 7px;
-    height: 7px;
-    background: white;
-    animation: animStar 200s linear;
-    position: absolute;
-    z-index: -20;
-    bottom: -50px;
-}
-
-.star3 {
-    width: 2px;
-    height: 2px;
-    background: white;
-    animation: animStar 500s linear;
-    position: absolute;
-    z-index: -30;
-    bottom: -50px;
-}
-
-/* Keyframes */
-
-@keyframes animStar {
-    0% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateY(-1500px);
-    }
+.zoom {
+    animation: zoom 3s forwards;
+    -webkit-animation: zoom 3s forwards;
 }
 
 @keyframes blinking {
@@ -125,28 +72,46 @@ html {
     }
 }
 
-@keyframes selected {
-    0% {
-        color: rgba(117, 250, 76, 1);
+@keyframes zoom {
+    30% {
+        transform: scale(200);
+        -webkit-transform: scale(200);
+        -moz-transform: scale(200);
+        -ms-transform: scale(200);
+        -o-transform: scale(200);
+        opacity: 0.5;
+        border-color: white;
     }
-
-    15% {
-        color: white;
+    50% {
+        transform: scale(200);
+        -webkit-transform: scale(200);
+        -moz-transform: scale(200);
+        -ms-transform: scale(200);
+        -o-transform: scale(200);
+        opacity: 0.5;
     }
-
-    100% {
-        color: rgba(117, 250, 76, 1);
+    80% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        opacity: 0;
     }
+    99% {
+        transform: scale(5000);
+        -webkit-transform: scale(5000);
+        -moz-transform: scale(5000);
+        -ms-transform: scale(5000);
+        -o-transform: scale(5000);
+        opacity: 1;
 }
-
-@keyframes fade-down {
-    0% {
-        color: transparent;
-        transform: translateY(-35px);
-    }
-
     100% {
-        color: rgba(117, 250, 76, 1);
-        transform: translateY(0px);
-    }
+        transform: scale(5000);
+        -webkit-transform: scale(5000);
+        -moz-transform: scale(5000);
+        -ms-transform: scale(5000);
+        -o-transform: scale(5000);
+        opacity: 1;
+}
 }
