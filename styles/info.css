@@ -38,7 +38,7 @@ h2 {
   /* width: fit-content; */
   padding: 0 5px;
   margin-bottom: 50px;
-  color: rgba(117, 250, 76, 1);
+  color: #75fa4c;
   text-align: center;
 }
 
@@ -106,7 +106,7 @@ p {
   background: transparent;
   text-decoration: none;
   font-size: clamp(12px, 2vw, 20px);
-  border: 2px solid orange;
+  border: 2px solid #ffa500;
   padding: 5px 5px;
   border-radius: 0px 0px 15px 0px;
   -webkit-border-radius: 0px 0px 15px 0px;
@@ -116,7 +116,7 @@ p {
   color: inherit;
 }
 #back-btn:hover {
-  background-color: orange;
+  background-color: #ffa500;
   cursor: pointer;
 }
 
@@ -128,7 +128,7 @@ p {
   background: transparent;
   text-decoration: none;
   font-size: clamp(12px, 2vw, 20px);
-  border: 2px solid orange;
+  border: 2px solid #ffa500;
   padding: 5px 5px;
   border-radius: 0px 15px 0px 0px;
   -webkit-border-radius: 0px 15px 0px 0px;
@@ -138,7 +138,7 @@ p {
   color: inherit;
 }
 #cv-btn:hover {
-  background-color: orange;
+  background-color: #ffa500;
   cursor: pointer;
 }
 
@@ -159,7 +159,7 @@ p {
   border-spacing: 10px;
 }
 .skills-tables td {
-  background-color: rgb(72, 177, 40);
+  background-color: #48b128;
   padding-left: 5px;
 }
 
@@ -173,4 +173,33 @@ p {
 }
 .horz-list > li {
   margin-right: 30px;
+}
+
+/* --------------------- Professional Experience --------------------- */
+#pro-exp-section .item {
+  border: 1px solid white;
+  padding: 10px;
+  position: relative;
+  min-height: 70px;
+  margin-bottom: 20px;
+  font-size: clamp(15px, 3vw, 25px);
+}
+#pro-exp-section .item > img {
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+}
+#pro-exp-section .item > div:last-of-type {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#pro-exp-section .item span {
+  color: #75fa4c;
+}
+#pro-exp-section .item a {
+  color: white;
+}
+#pro-exp-section .item a:hover {
+  color: #75fa4c;
 }
