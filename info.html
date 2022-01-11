@@ -11,136 +11,216 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html" id="back-btn">Back to Home</a>
-    </header>
+    <a href="index.html" id="back-btn">Back to Home</a>
+    <button id="cv-btn">Download CV</button>
 
-    <div id="avatar">
-        <img src="./images/Portrait.jpg" alt="Marwan Bassam Portrait">
-        <div>
-            <h1>Marwan</h1>
-            <h1>Bassam</h1>
+    <img id="me" class="frozen-pos" src="./images/Portrait no bkg.png" alt="Marwan Bassam Portrait">
+    <!-- TODO: Add "health" at bottom of image to indicate age -->
+
+    <div id="title-name">
+        <h1>Marwan</h1>
+        <h1>Bassam</h1>
+        <img style="width: 200px; height: 120px; margin: 0 auto;" src="./images/scrolldown.gif" alt="scroll down gif">
+        <img style="width: 200px; height: 120px; margin: 0 auto; margin-top: -90px;" src="./images/scrolldown.gif"
+            alt="scroll down gif">
+    </div>
+
+
+    <!-------------------------------------- About Me -------------------------------------->
+    <div id="about-me-section" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate developer who has a solid foundation in general programming aspects but specializes in Web
+            Development. Developing numerous websites has given me confidence in my skills, allowing me to become a
+            reliable
+            team member in a project/job environment. On the side, I like to play around with Unity & Unreal engine as
+            well
+            as attend workshops to feed my interest in Game Development.
+        </p>
+    </div>
+
+
+
+    <!-------------------------------------- Skills -------------------------------------->
+    <div id="skills-section" class="section">
+        <h2>Skills</h2>
+
+        <div class="skills-tables">
+            <table>
+                <caption>Web Development</caption>
+                <thead>
+                    <tr>
+                        <th>Front End</th>
+                        <th>Back End</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Node.js</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>MySQL</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td>Vue.js</td>
+                    </tr>
+                    <tr>
+                        <td>Wix</td>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <caption>Game Development</caption>
+                <tbody>
+                    <tr>
+                        <td>Unity / C#</td>
+                    </tr>
+                    <tr>
+                        <td>Unreal Engine</td>
+                    </tr>
+                    <tr>
+                        <td>OpenGL / C++</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <caption>Mobile Development</caption>
+                <tbody>
+                    <tr>
+                        <td>iOS / SWIFT</td>
+                    </tr>
+                    <tr>
+                        <td>Android / Java</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <caption>General Programming</caption>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>MIPS Assembly</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="skills-tables">
+            <table>
+                <caption>Spoken Languages</caption>
+                <tbody>
+                    <tr>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>Arabic (Lebanese)</td>
+                    </tr>
+                    <tr>
+                        <td>French</td>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="skills-tables">
+            <table>
+                <caption>Soft Skills</caption>
+                <tbody>
+                    <tr>
+                        <td>Communication</td>
+                    </tr>
+                    <tr>
+                        <td>Teamwork</td>
+                    </tr>
+                    <tr>
+                        <td>Leadership</td>
+                    </tr>
+                    <tr>
+                        <td>Fast Worker</td>
+                    </tr>
+                    <tr>
+                        <td>Troubleshooting</td>
+                    </tr>
+                    <tr>
+                        <td>Adaptibility</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-    
 
-    <!-------------------------------------- About Me -------------------------------------->
-    <h2>About Me</h2>
-    <p>
-        I am a passionate developer who has a solid foundation in general programming aspects but specializes in Web
-        Development. Developing numerous websites has given me confidence in my skills, allowing me to become a reliable
-        team member in a project/job environment. On the side, I like to play around with Unity & Unreal engine as well
-        as attend workshops to feed my interest in Game Development.
-    </p>
-
-    
-
-    <!-------------------------------------- Skills -------------------------------------->
-    <h2>Skills</h2>
-    <h3>Programming</h3>
-    <ul class="horz-list">
-        <li>Web Development
-            <ul>
-                <li>Front End:
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Vue.js</li>
-                        <li>Wix</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </li>
-                <li>Back End:
-                    <ul>
-                        <li>Node.js</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>Game Development
-            <ul>
-                <li>Unity/C#</li>
-                <li>Unreal</li>
-                <li>OpenGL/C++</li>
-            </ul>
-        </li>
-        <li>Mobile Development
-            <ul>
-                <li>iOS/Swift</li>
-                <li>Android/Java</li>
-            </ul>
-        </li>
-        <li>General Programming
-            <ul>
-                <li>Java</li>
-                <li>C++</li>
-                <li>Python</li>
-                <li>MIPS Assembly</li>
-                <li>C</li>
-            </ul>
-        </li>
-    </ul>
-    <h3>Spoken Languages</h3>
-    <ul class="horz-list">
-        <li>English</li>
-        <li>Lebanese Arabic</li>
-        <li>French</li>
-        <li>Japanese</li>
-    </ul>
-    <h3>Soft Skills</h3>
-    <ul class="horz-list">
-        <li>Communication</li>
-        <li>Teamwork</li>
-        <li>Leadership</li>
-        <li>Fast Worker</li>
-        <li>Troubleshooting</li>
-        <li>Adaptibility</li>
-    </ul>
-
-    
 
     <!-------------------------------------- Professional Experience -------------------------------------->
-    <h2>Professional Experience</h2>
-    <pre>
-        Freelance Web Developer
-        The Glimpse Project 								Jul 2021 - Present	
-        
-        Internship Web Developer 
-        The Glimpse Project 								Jun 2021 
+    <div id="pro-exp-section" class="section">
+        <h2>Professional Experience</h2>
+        <pre>
+            Freelance Web Developer
+            The Glimpse Project 								Jul 2021 - Present	
+            
+            Internship Web Developer 
+            The Glimpse Project 								Jun 2021 
+            
+            Internship Research and Developer
+            Mirum Agency 								        Jun 2020 - Jul 2020
+            
+            Internship Computer Repair Technician
+            Middle East Information Technology						Aug 2018 	
+        </pre>
+    </div>
 
-        Internship Research and Developer
-        Mirum Agency 								        Jun 2020 - Jul 2020
 
-        Internship Computer Repair Technician
-        Middle East Information Technology						Aug 2018 	
-    </pre>
-
-    
 
     <!-------------------------------------- Personal Projects -------------------------------------->
-    <h2>Personal Projects</h2>
+    <div id="personal-proj-section" class="section">
+        <h2>Personal Projects</h2>
+    </div>
 
 
-    
+
 
     <!-------------------------------------- Education -------------------------------------->
-    <h2>Education</h2>
-    <p>
-        BS in Computer Science <br>
-        American University of Beirut 2019 - Present
-    </p>
-    <p>
-        Minor in Game Development <br>
-        American University of Beirut 2019 - Present
-    </p>
-    <p>
-        Lebanese Baccalaureate <br>
-        College Louise Wegmann 2004 - 2019
-    </p>
+    <div id="education-section" class="section">
+        <h2>Education</h2>
+        <p>
+            BS in Computer Science <br>
+            American University of Beirut 2019 - Present
+        </p>
+        <p>
+            Minor in Game Development <br>
+            American University of Beirut 2019 - Present
+        </p>
+        <p>
+            Lebanese Baccalaureate <br>
+            College Louise Wegmann 2004 - 2019
+        </p>
+    </div>
 
     <!-------------------------------------- Contact -------------------------------------->
     <footer>
