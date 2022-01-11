@@ -55,8 +55,8 @@ body {
 }
 
 .zoom {
-    animation: zoom 3s forwards;
-    -webkit-animation: zoom 3s forwards;
+    animation: zoom 2s forwards;
+    -webkit-animation: zoom 2s forwards;
 }
 
 @keyframes blinking {
@@ -83,7 +83,7 @@ body {
         opacity: 0.5;
         border-color: white;
     }
-    50% {
+    40% {
         transform: scale(200);
         -webkit-transform: scale(200);
         -moz-transform: scale(200);
