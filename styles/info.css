@@ -142,6 +142,11 @@ p {
   cursor: pointer;
 }
 
+/* --------------------- About Me --------------------- */
+#about-me-section p {
+  line-height: 50px;
+}
+
 /* --------------------- Skills --------------------- */
 .skills-tables {
   display: flex;
@@ -151,28 +156,57 @@ p {
   font-size: clamp(15px, 3vw, 25px);
 }
 
-.skills-tables table {
+.skills-tables > .table-container > h3 {
+  position: absolute;
+  width: 100%;
+  top: -50px;
+}
+
+.skills-tables .table-container {
   border: 6px solid gray;
+  position: relative;
+  text-align: center;
+  height: clamp(200px, 25vw, 400px);
+  width: clamp(200px, 25vw, 400px);
   padding: 5px 10px;
-  min-width: 300px;
-  margin: 10px;
-  border-spacing: 10px;
+  margin: 70px 10px;
+}
+
+.skills-tables .table-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.skills-tables .table-container img {
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+
+.unopened {
+  animation: unopened 1s infinite;
+  -webkit-animation: unopened 1s infinite;
+}
+
+.opened img {
+  animation: opened 1s forwards;
+  -webkit-animation: opened 1s forwards;
+}
+
+.skills-tables table {
+  width: 100%;
+  border-spacing: 10px 15px;
 }
 .skills-tables td {
   background-color: #48b128;
-  padding-left: 5px;
+  padding: 2px 0px 2px 5px;
+  text-align: start;
 }
 
 .skills-tables th {
   text-align: start;
-}
-
-.horz-list {
-  display: flex;
-  flex-direction: row;
-}
-.horz-list > li {
-  margin-right: 30px;
 }
 
 /* --------------------- Professional Experience --------------------- */
@@ -182,17 +216,22 @@ p {
   position: relative;
   min-height: 70px;
   margin-bottom: 20px;
-  font-size: clamp(15px, 3vw, 25px);
+  font-size: clamp(7px, 3vw, 25px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-#pro-exp-section .item > img {
+#pro-exp-section .item > div:first-of-type {
+  flex: 0.7;
+}
+#pro-exp-section .item > div:last-of-type {
+  margin-left: 20px;
+  flex: 0.3;
+}
+#pro-exp-section img {
   height: 50px;
   float: left;
   margin-right: 10px;
-}
-#pro-exp-section .item > div:last-of-type {
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
 #pro-exp-section .item span {
   color: #75fa4c;
@@ -202,4 +241,68 @@ p {
 }
 #pro-exp-section .item a:hover {
   color: #75fa4c;
+}
+
+/* --------------------- Animation --------------------- */
+
+@keyframes unopened {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
+  45% {
+    transform: translateY(-10px) rotateZ(2deg);
+    -webkit-transform: translateY(-10px) rotateZ(2deg);
+    -moz-transform: translateY(-10px) rotateZ(2deg);
+    -ms-transform: translateY(-10px) rotateZ(2deg);
+    -o-transform: translateY(-10px) rotateZ(2deg);
+  }
+  55% {
+    transform: translateY(-10px) rotateZ(-2deg);
+    -webkit-transform: translateY(-10px) rotateZ(-2deg);
+    -moz-transform: translateY(-10px) rotateZ(-2deg);
+    -ms-transform: translateY(-10px) rotateZ(-2deg);
+    -o-transform: translateY(-10px) rotateZ(-2deg);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes opened {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
 }
