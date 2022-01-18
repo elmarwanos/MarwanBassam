@@ -5,6 +5,7 @@ window.onscroll = () => {
 }
 
 window.onload = () => {
+    alert("This page is still being developed so it is subject to change!");
     const marioBlocks = document.querySelectorAll(".table-container > img");
     for (let i = 0; i < marioBlocks.length; i++) {
         marioBlocks[i].addEventListener("click", blockClick);
