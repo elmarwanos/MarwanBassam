@@ -151,25 +151,26 @@ p {
 .skills-tables {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  font-size: clamp(15px, 3vw, 25px);
-}
-
-.skills-tables > .table-container > h3 {
-  position: absolute;
-  width: 100%;
-  top: -50px;
+  justify-content: center;
 }
 
 .skills-tables .table-container {
   border: 6px solid gray;
   position: relative;
   text-align: center;
-  height: clamp(200px, 25vw, 400px);
-  width: clamp(200px, 25vw, 400px);
-  padding: 5px 10px;
-  margin: 70px 10px;
+  height: 0;
+  width: clamp(350px, 25vw, 900px);
+  padding-bottom: clamp(350px, 25vw, 900px);
+  padding-top: 5px ;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 70px 20px;
+}
+
+.skills-tables .table-container h3 {
+  position: absolute;
+  width: 100%;
+  top: -50px;
 }
 
 .skills-tables .table-container img {
@@ -178,9 +179,6 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-}
-
-.skills-tables .table-container img {
   -webkit-user-drag: none;
   cursor: pointer;
 }
@@ -195,9 +193,15 @@ p {
   -webkit-animation: opened 1s forwards;
 }
 
+/* Actual HTML Table */
 .skills-tables table {
   width: 100%;
   border-spacing: 10px 15px;
+  table-layout: fixed;
+}
+.skills-tables .table-container tr td {
+  font-size: clamp(7px, 2.5vw, 25px);
+  width: max-content;
 }
 .skills-tables td {
   background-color: #48b128;
