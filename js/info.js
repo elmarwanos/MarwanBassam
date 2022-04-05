@@ -21,7 +21,7 @@ window.onload = () => {
     }
 }
 
-//Click mario box to open
 function blockClick(e) {
+    //Click mario box to open
     e.target.parentNode.classList.replace("unopened", "opened");
 }
